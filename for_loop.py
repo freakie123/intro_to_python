@@ -27,24 +27,17 @@ rep()
 
 
 # Function to demonstrate printing pattern 
-def pypart(n): 
+def pypart(n):
+	a = [1,2,3,4,5,6,5,4,3,2,1]
+	for elements in a
+		if elements == max(a):
+			print (elements*"*")
+		print (elements*"*") 
     
-    # outer loop to handle number of rows 
-    # n in this case 
-    for i in range(0, n): 
     
-        # inner loop to handle number of columns 
-        # values changing acc. to outer loop 
-        for j in range(0, i+1): 
-        
-            # printing stars 
-            print("* ",end="") 
-    
-        # ending line after each row 
-        print("\r") 
     
 # Driver Code 
 
-pypart(4) 
+pypart() 
 
 

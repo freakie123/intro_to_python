@@ -7,16 +7,16 @@ while ( i < 20 ):
 
 def even():
     evennum = []
-    num2=int(input("Enter Big Number"))
-    num1=int(input("Enter Small Number"))
+    num1=int(input("Enter small Number"))
+    num2=int(input("Enter big Number"))
     
-    num1
-    while( num1 < num2):
-        if num1%2 == 0:
+    
+    for num in range( num1, num2):
+        if num1 % 2 == 0:
             evennum.append(num1)
         
     return evennum
-
+print(even())
 
 
 
@@ -26,10 +26,12 @@ def even():
 def reverse_evens():
     rev = even()
     rev.reverse()
+
     return rev
- 
-print(even())
-print (reverse_evens())
+
+
+reee=reverse_evens()
+print (reee)
 
 
 
